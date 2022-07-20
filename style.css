@@ -24,9 +24,6 @@ section{
     align-items: center;
     justify-content: space-between;    
 }
-h3{
-    font-size: 2rem;
-}
 p{
     color: #FFFFFF;
     font-weight: 400;
@@ -221,10 +218,13 @@ footer .terms{
 }
 footer .terms a, .social-link a{
     color: #FFFFFF;
-    padding: 20px 10px;
+    padding: 20px 0px;
 }
 .social-link a{
-    font-size: 16px;
+    font-size: 20px;
+}
+.social-link a:hover{
+    transform: scale(1.1);
 }
 /* footer section ends */
 
@@ -236,9 +236,14 @@ web2 Upcoming section starts
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
-.flag-image img{
-    padding: 1rem;
+.flag-image h3{
+    font-size: 3rem;
+    padding: 0;
+}
+.flag-info p{
+    color: #4c4c4c;
 }
 .upcoming-match{
     display: flex;
