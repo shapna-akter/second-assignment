@@ -1,0 +1,351 @@
+/* common and reuseable codes starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: 0;
+    cursor: pointer;
+}
+html{
+    background: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 160rem;
+    max-width: 100%;
+    margin: auto;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 26px;
+    padding: 20px 0;
+}
+.btn a{
+    background: #DD0000;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.btn a:hover{
+    border: 1px solid #DD0000;
+    background: #fff;
+    color: #DD0000;
+    padding: 9px 23px;
+}
+.btn .active-btn{
+    background: #DD0000;
+    color: #FFFFFF;
+}
+.btn .hidden-btn{
+    display: none;
+}
+/* common and reuseable codes ends here */
+
+/* -----------
+Hero section 
+------------- */
+#hero-sec{
+    background: #000;
+    background-size: cover;
+    margin: 50px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    overflow: hidden;
+}
+article{
+    flex-basis: 50%;
+    margin-left: 8rem;
+}
+article h1{
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 8rem;
+    text-align: left;
+}
+@keyframes sliding{
+    0%{
+        right: -300px;
+        opacity: 0;
+    }
+    100%{
+        right: 0px;
+        opacity: 1;
+    }
+}
+aside{
+    flex-basis: 50%;
+    text-align: center;
+    position: relative;
+    position: relative;
+    animation: sliding 0.4s;
+}
+aside img{
+    width: 581px;
+    height: 613px;
+    display: block;
+}
+.moving-bg{
+    position: relative;
+}
+aside::before{
+    position: absolute;
+    content: "";
+    background: #DD0000;
+    top: 20%;
+    right: 2%;
+    width: 581px;
+    height: 613px;
+    display: block;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    animation: moving 4s linear infinite;
+}
+@keyframes moving {
+    0%{
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    }
+    50%{
+        border-radius: 31% 69% 59% 41% / 28% 24% 76% 72%
+    }
+    100%{
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    }
+}
+/* --------------
+ Blog section
+---------------- */
+#blog-sec{
+    margin: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+.blog{
+    display: flex;
+}
+.btn-sec{
+    width: 300px;
+    height: 300px;
+    background: #000;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+    margin-right: 15px;
+    padding: 15px 20px;
+}
+.btn-sec a{
+    background: #FFFFFF;
+    color: #4c4c4c;
+    width: 252px;
+    text-align: center; 
+}
+.cards-sec{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.card{
+    border: 1px solid #d4c8c8;
+    border-radius: 5px;  
+}
+.card img{
+    width: 100%;
+}
+.card-info{
+    padding: 10px;
+}
+.transfer{
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 5px 20px;
+}
+.card-info p, span{
+    color: #161616;
+    font-size: 1.6rem;
+}
+.card-info span, i{
+    margin-right: 30px;
+}
+.card-info i{
+    margin-right: 10px;
+}
+/* footer section starts */
+footer{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+footer h3{
+    font-size: 4rem;
+    padding: 10px;
+}
+hr{
+    width: 80%;
+}
+footer .terms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #B9B9B9;
+    font-size: 16px;
+}
+footer .terms a, .social-link a{
+    color: #FFFFFF;
+    padding: 20px 10px;
+}
+.social-link a{
+    font-size: 16px;
+}
+/* footer section ends */
+
+
+/* ============================
+web2 Upcoming section starts
+=============================== */
+.flag-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flag-image img{
+    padding: 1rem;
+}
+.upcoming-match{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ------------------
+web3 section starts 
+---------------------- */
+.all-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+.card-1{
+    background-image: url(images/all-group-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.two-cards{
+    display: flex;
+}
+.card-2{
+    background-image: url(images/all-group-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-right: 10px;
+}
+.card-3{
+    background-image: url(images/all-group-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.all-group span{
+    color: goldenrod
+}
+
+/* Responsive starts here */
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 55.5%;
+    }
+    #hero-sec{
+        width: 100%;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn-sec{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: none;
+    }
+    .btn-sec a{
+        border: 1px solid #4444;
+    }
+    .btn .hidden-btn{
+        display: block;
+        margin-top: 50px;
+    }
+    .cards-sec{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 48.5%;
+    }
+    #hero-sec{
+        flex-direction: column;
+    }
+    .ellipsis{
+        width: 200px;
+        border: 3px solid #ddd;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .short-text{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .btn-sec{
+        flex-direction: column;
+    }
+    .cards-sec{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .terms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #B9B9B9;
+        font-size: 16px;
+    }
+}
