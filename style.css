@@ -32,7 +32,7 @@ p{
     padding: 20px 0;
 }
 .btn a{
-    background: #DD0000;
+    background: goldenrod;
     color: #FFFFFF;
     padding: 10px 24px;
     border-radius: 5px;
@@ -60,7 +60,7 @@ p{
 Hero section 
 ------------- */
 #hero-sec{
-    background: #000;
+    background: #4c4c4c;
     background-size: cover;
     margin: 50px;
     padding: 0 1rem;
@@ -109,7 +109,7 @@ aside img{
 aside::before{
     position: absolute;
     content: "";
-    background: #DD0000;
+    background: goldenrod;
     top: 20%;
     right: 2%;
     width: 581px;
@@ -129,6 +129,10 @@ aside::before{
         border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     }
 }
+.hero-btn a:hover{
+    color: gold;
+    border: 1px solid goldenrod;
+}
 /* --------------
  Blog section
 ---------------- */
@@ -143,7 +147,7 @@ aside::before{
 .btn-sec{
     width: 300px;
     height: 300px;
-    background: #000;
+    background: #4c4c4c;
     border-radius: 10px;
     
     display: flex;
@@ -193,7 +197,7 @@ aside::before{
 }
 /* footer section starts */
 footer{
-    background: #000;
+    background: #4c4c4c;
     display: flex;
     flex-direction: column;
     justify-content: center;
